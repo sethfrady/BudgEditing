@@ -24,6 +24,13 @@ class FinancesController < ApplicationController
     def update
         @finance = Finance.find(params[:id])
     end
+    
+    def destroy
+        @finance = Finance.find(params[:id])
+        @finance.destroy
+        
+        redirect_to finances_path
+    end
 end
 
 
