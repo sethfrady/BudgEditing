@@ -1,12 +1,13 @@
-<div id="navbar">Test</div>
-<div class="row">
-    <div id="leftnav">
-        <h1>Test1</h1>
+<div id="navbar"></div>
+    <div class="sidebar">
+        <div id="links">
+            <br>
+        <%= link_to 'My Budgets', controller: 'finances' %> <br><br>
+        <%= link_to 'Create New Budget', new_finance_path, :method => "get"%>
+        </div>
     </div>
     <div id="body">
-        <h1>Test2</h1>
-        <%= link_to 'My Budgets', controller: 'finances' %>
-        <%= link_to 'Create New Budget', new_finance_path, :method => "get"%>
+        <h1>Welcome to BudgEditing!</h1>
         
     </div>
 </div>
