@@ -16,16 +16,34 @@
     left: 205px;
 }
 
-.sidebar {
-    background-color: #41f495;
-    position: fixed;
-    top: 80px;
-    left: 0px;
-    width: 200px;
-    height: 100%;
+// .sidebar {
+//     background-color: #41f495;
+//     position: fixed;
+//     top: 80px;
+//     left: 0px;
+//     width: 200px;
+//     height: 100%;
+// }
+
+// #title {
+//     text-align: center;
+//     font-size: 32;
+// }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#title {
-    text-align: center;
-    font-size: 32;
+#leftnav {
+    float: left;
+    background-color: #41f495;
+    width: 20%;
 }
+
+#body {
+    float: left;
+    background-color: black;
+}
+

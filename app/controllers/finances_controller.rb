@@ -1,4 +1,8 @@
 class FinancesController < ApplicationController
+    def index
+        @finances = Finance.all
+    end
+    
     def show
         @finance = Finance.find(params[:id])
     end

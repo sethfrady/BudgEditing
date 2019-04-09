@@ -1,0 +1,14 @@
+<h1>List of Budgets</h1>
+
+<table>
+    <tr>
+        <th>Budget</th>
+    </tr>
+    
+    <% @finances.each do |finance| %>
+        <tr>
+            <td><%= finance.title %> </td>
+            <td><%= link_to finance.title, finance_path(finance) %></td>
+        </tr>
+    <% end %>
+</table>
