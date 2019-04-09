@@ -1,4 +1,5 @@
 <h1>List of Budgets</h1>
+<%= link_to 'Create New Budget', new_finance_path %>
 
 <table>
     <tr>
@@ -9,6 +10,7 @@
         <tr>
             <td><%= finance.title %> </td>
             <td><%= link_to finance.title, finance_path(finance) %></td>
+            <td><%= link_to 'Edit', edit_finance_path(finance) %></td>
         </tr>
     <% end %>
 </table>

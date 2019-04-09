@@ -16,7 +16,16 @@ class FinancesController < ApplicationController
         @finance.save
         redirect_to @finance
     end
+    
+    def edit
+        @finance = Finance.find(params[:id])
+    end
+    
+    def update
+        @finance = Finance.find(params[:id])
+    end
 end
+
 
 private
     def finance_params
