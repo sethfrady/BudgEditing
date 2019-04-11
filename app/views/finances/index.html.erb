@@ -1,12 +1,20 @@
-
+<div id="navbar">
+    <%= image_tag("logo.png", size: "125x125", padding: "-50") %>
+</div>
 <h1>List of Budgets</h1>
 <%= link_to 'Create New Budget', new_finance_path %>
-<div id="navbar">Test</div>
 
+<div class="sidebar">
+        <div id="links">
+            <br>
+        <%= link_to 'My Budgets', controller: 'finances' %> <br><br>
+        <%= link_to 'Create Budget', new_finance_path, :method => "get"%>
+        </div>
+</div>
+
+<div>
+    <h1 class="headbody">Budgets</h1>
 <table>
-    <tr>
-        <th>Budget</th>
-    </tr>
     
     <% @finances.each do |finance| %>
         <tr>
@@ -18,3 +26,4 @@
     <% end %>
 </table>
 <%= link_to 'Back', controller: 'welcome' %>
+</div>
