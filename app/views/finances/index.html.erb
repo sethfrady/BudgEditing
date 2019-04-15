@@ -1,5 +1,4 @@
 <div id="navbar">
-    <%= image_tag("logo.png", size: "125x125", padding: "-50") %>
 </div>
 <h1>List of Budgets</h1>
 <%= link_to 'Create New Budget', new_finance_path %>
@@ -14,16 +13,20 @@
 
 <div>
     <h1 class="headbody">Budgets</h1>
-<table>
-    
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+          </tr>
     <% @finances.each do |finance| %>
         <tr>
-            <td><%= finance.title %> </td>
-            <td><%= link_to finance.title, finance_path(finance) %></td>
-            <td><%= link_to 'Edit Budget', edit_finance_path(finance) %></td>
-            <td><%= link_to 'Delete Budget', finance_path(finance), method: :delete, data: { confirm: 'This action cannot be undone' } %></td>
+            <td class="cell"><%= link_to finance.title, finance_path(finance) %></td>
+            <td><%= link_to 'Edit', edit_finance_path(finance) %>
+            <%= link_to 'Delete', finance_path(finance), method: :delete, data: { confirm: 'This action cannot be undone' } %></td>
         </tr>
     <% end %>
-</table>
-<%= link_to 'Back', controller: 'welcome' %>
+    </table>
+<div class="homebody">    
+    <%= link_to 'Back', controller: 'welcome' %>
+</div>
 </div>

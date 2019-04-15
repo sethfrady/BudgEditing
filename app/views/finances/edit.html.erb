@@ -1,4 +1,15 @@
-<h1>Edit Budget</h1>
+<div id="navbar">
+</div>
+<div class="sidebar">
+        <div id="links">
+            <br>
+        <%= link_to 'My Budgets', controller: 'finances' %> <br><br>
+        <%= link_to 'Create Budget', new_finance_path, :method => "get"%>
+        </div>
+</div>
+
+<h1 class="headbody">Edit Budget</h1>
+<div class="homebody">
 <%= form_for :finance, url: finances_path(@finance), :method => :post do |f| %>
 <p class="title">
 <%= f.label :title %>
@@ -37,9 +48,10 @@
     </p>
     <p class="cat">
 <%= f.submit %>
-<%= link_to 'Back', controller: 'welcome' %>
+<%= link_to 'Back', controller: 'finances' %>
 
 
   </p>
     <% end %>
     <p>
+</div>
