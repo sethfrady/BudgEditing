@@ -21,6 +21,7 @@ body {
     left: 205px;
     font-size: 48px;
     font-family: Mohave;
+    color: #36454f;
 }
 
 .sidebar {
@@ -81,4 +82,19 @@ tr:nth-child(even){background-color: #f2f2f2}
 th {
   background-color: #36454f;
   color: white;
+}
+
+.body1 {
+    text-align: center;
+  top: 200px;
+  left: 205px;
+  font-size: 20px;
+  font-family: Mohave;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-collapse: collapse;
+  float: up;
+  padding-top: 50px;
 }

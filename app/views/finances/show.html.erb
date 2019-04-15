@@ -1,3 +1,13 @@
+<div id="navbar">
+</div>
+<div class="sidebar">
+        <div id="links">
+            <br>
+        <%= link_to 'My Budgets', controller: 'finances' %> <br><br>
+        <%= link_to 'Create Budget', new_finance_path, :method => "get"%>
+        </div>
+</div>
+<div class="body1">
 <p>
     <strong>Title:</strong>
     <%= @finance.title %>
@@ -79,3 +89,4 @@
 <% end %>
 
 <%= link_to 'Back', finances_path %>
+</div>
