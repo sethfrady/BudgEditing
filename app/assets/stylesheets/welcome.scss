@@ -21,11 +21,10 @@ body {
     left: 205px;
     font-size: 48px;
     font-family: Mohave;
-    color: #36454f;
 }
 
 .sidebar {
-    background-color: #41f495;
+    background-color: #20B2AA;
     position: fixed;
     top: 60px;
     left: 0px;
@@ -60,6 +59,7 @@ body {
 }
 
 table {
+    margin-top: 20px;
   top: 200px;
   left: 205px;
   margin-left: auto;
@@ -77,7 +77,8 @@ th, td {
     width: 500px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){background-color: #20B2AA}
+tr:nth-child(odd){background-color: #f2f2f2}
 
 th {
   background-color: #36454f;
@@ -97,4 +98,14 @@ th {
   border-collapse: collapse;
   float: up;
   padding-top: 50px;
+}
+
+input[type=submit] {
+    background-color: #36454f;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-family: Mohave;
+    font-size: 16px;
 }
