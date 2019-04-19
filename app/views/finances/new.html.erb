@@ -1,4 +1,6 @@
 <div id="navbar">
+    <%= link_to image_tag("https://marazul.com.pa/wp-content/uploads/marazul-servicios-cost-budget.png", 
+    :height => 50, :align => "center"), "https://751dc8b793054bf4807f6adb88c29c2d.vfs.cloud9.us-east-2.amazonaws.com/" %>
 </div>
 <div class="sidebar">
         <div id="links">
@@ -12,37 +14,37 @@
 <div class="homebody">
 <%= form_for :finance, url: finances_path do |f| %>
 <p class="title">
-<%= f.label :title %>:
+<strong><%= f.label :title %>:</strong>
 <%= f.text_field :title %>
     </p>
 
 <p class="cat">
 <%= f.label :category %>:
-<%= f.text_field :cat1 %>&nbsp
+<%= f.text_field :cat1 %>&nbsp &nbsp
 <%= f.label :amount %>:
 <%= f.number_field :amount1, class: :text_field, step: :any %>
     </p>
 <p class="cat">
 <%= f.label :category %>:
-<%= f.text_field :cat2 %>&nbsp
+<%= f.text_field :cat2 %>&nbsp &nbsp
 <%= f.label :amount %>:
 <%= f.number_field :amount2, class: :text_field, step: :any %>
     </p>
 <p class="cat">
 <%= f.label :category %>:
-<%= f.text_field :cat3 %>&nbsp
+<%= f.text_field :cat3 %>&nbsp &nbsp
 <%= f.label :amount %>:
 <%= f.number_field :amount3, class: :text_field, step: :any %>
     </p>
 <p class="cat">
 <%= f.label :category %>:
-<%= f.text_field :cat4 %>&nbsp
+<%= f.text_field :cat4 %>&nbsp &nbsp
 <%= f.label :amount %>:
 <%= f.number_field :amount4, class: :text_field, step: :any %>
     </p>
 <p>
 <%= f.label :category %>:
-<%= f.text_field :cat5 %>&nbsp
+<%= f.text_field :cat5 %>&nbsp &nbsp
 <%= f.label :amount %>:
 <%= f.number_field :amount5, class: :text_field, step: :any %>
     </p>

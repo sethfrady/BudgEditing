@@ -11,7 +11,22 @@
 }
 
 body {
-    background-color: #c8cbce;
+    // background-color: #c8cbce;
+    background-image: url("images/logo.png");
+}
+
+#image {
+    padding:1px;
+   border:1px solid #021a40;
+   background-color:#20B2AA;
+}
+
+.style_image {
+    height: 50px;
+}
+
+.logo {
+    height: 50px;
 }
 
 .headbody {
@@ -30,6 +45,7 @@ body {
     left: 0px;
     width: 200px;
     height: 100%;
+    border-right: 3px solid black;
 }
 
 #title {
@@ -108,4 +124,12 @@ input[type=submit] {
     font-weight: bold;
     font-family: Mohave;
     font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: #20B2AA;
+}
+
+input[type=text], input[type=number] {
+    background-color: #f2f2f2;
 }

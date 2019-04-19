@@ -12,38 +12,38 @@
 <div class="homebody">
 <%= form_for :finance, url: finances_path(@finance), :method => :post do |f| %>
 <p class="title">
-<%= f.label :title %>
+<strong><%= f.label :title %>:</strong>
 <%= f.text_field :title %>
     </p>
 
 <p class="cat">
-<%= f.label :category %>
+<%= f.label :category %>:
 <%= f.text_field :cat1 %>
-<%= f.label :amount %>
+<%= f.label :amount %>:
 <%= f.number_field :amount1, class: :text_field, step: :any %>
     </p>
 <p class="cat">
-<%= f.label :category %>
+<%= f.label :category %>:
 <%= f.text_field :cat2 %>
-<%= f.label :amount %>
+<%= f.label :amount %>:
 <%= f.number_field :amount2, class: :text_field, step: :any %>
     </p>
 <p class="cat">
-<%= f.label :category %>
+<%= f.label :category %>:
 <%= f.text_field :cat3 %>
-<%= f.label :amount %>
+<%= f.label :amount %>:
 <%= f.number_field :amount3, class: :text_field, step: :any %>
     </p>
 <p class="cat">
-<%= f.label :category %>
+<%= f.label :category %>:
 <%= f.text_field :cat4 %>
-<%= f.label :amount %>
+<%= f.label :amount %>:
 <%= f.number_field :amount4, class: :text_field, step: :any %>
     </p>
 <p class="cat">
-<%= f.label :category %>
+<%= f.label :category %>:
 <%= f.text_field :cat5 %>
-<%= f.label :amount %>
+<%= f.label :amount %>:
 <%= f.number_field :amount5, class: :text_field, step: :any %>
     </p>
     <p class="cat">

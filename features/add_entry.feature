@@ -9,4 +9,3 @@ Feature: Add a new budget
     When I click on the "Create Budget" link 
     Then I should be on the "New Budget" page 
     And I should see the "Title" field 
-    
